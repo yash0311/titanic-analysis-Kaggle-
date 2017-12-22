@@ -55,7 +55,6 @@ def create_feature1(SibSp,Parch):
 def create_feature2(sex,Pclass):
     s=''
     if sex=='male':
-        s+= '1'
         if Pclass=='1':
             s+='1'
         elif Pclass=='2':
@@ -63,7 +62,6 @@ def create_feature2(sex,Pclass):
         else:
             s+='3'
     else:
-        s+= '0'
         if Pclass=='1':
             s+='4'
         elif Pclass=='2':
